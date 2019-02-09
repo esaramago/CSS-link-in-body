@@ -1,0 +1,10 @@
+main {
+    grid-area: main;
+    padding: 0 20px 20px;
+}
+main h2 {
+	margin-bottom: 10px;
+}
+main p {
+	margin-top: 0;
+}

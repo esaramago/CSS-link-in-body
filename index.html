@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Link in body test</title>
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<!--
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/aside.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	-->
+</head>
+<body>
+
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<header>
+	
+	<span class="logo"></span>
+
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<nav>
+		<ul>
+			<li>
+				<a href="#">Page 1</a>
+			</li>
+			<li>
+				<a href="#">Page 2</a>
+			</li>
+			<li>
+				<a href="#">Page 3</a>
+			</li>
+			<li>
+				<a href="#">Page 4</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<main>
+	<h1>Link in body</h1>
+	<p>This is a test based on <a target="_blank" href="https://jakearchibald.com/2016/link-in-body/">this article</a>.</p>
+	<p>In order to test this, use network throttling (slow network), to see the differences.</p>
+	<h2>Explanation</h2>
+	<p>Instead of placing all the styles inside the head tag, I'm splitting them in different files, by component, and placing the link tag before the html of each component.</p>
+	<p>This way, instead of waiting for every style to download, whenever a component style downloads, it renders right away.</p>
+	<hr>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<h2>Lorem ipsum dolor</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</main>
+
+<link rel="stylesheet" type="text/css" href="css/aside.css">
+<aside>
+	<ul>
+		<li>Lorem ipsum</li>
+		<li>Lorem ipsum</li>
+		<li>Lorem ipsum</li>
+		<li>Lorem ipsum</li>
+	</ul>
+</aside>
+
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<footer>
+	<p>Lorem ipsum</p>
+</footer>
+
+
+</body>
+</html>

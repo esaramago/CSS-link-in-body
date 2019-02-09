@@ -1,0 +1,28 @@
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: tomato;
+}
+
+header .logo {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #FFF;
+    overflow: hidden;
+}
+header .logo:before {
+    content: "e";
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    color: tomato;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 90px;
+}

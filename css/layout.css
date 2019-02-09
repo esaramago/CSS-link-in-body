@@ -1,0 +1,16 @@
+html,
+body {
+	min-height: 100%;
+    font-family: "Segoe ui", "sans-serif";
+    font-size: 18px;
+}
+body {
+	display: grid;
+	grid-template-columns: 5fr 130px;
+	grid-template-rows: 104px 5fr 1fr;
+	margin: 0;
+	grid-template-areas:
+	"header header"
+	"main aside"
+	"footer footer";
+}

@@ -1,0 +1,9 @@
+aside {
+	padding: 10px;
+	border-left: 5px solid #AAA;
+	background-color: #DDD;
+	font-size: 14px;
+}
+aside ul {
+	padding-left: 20px;
+}
