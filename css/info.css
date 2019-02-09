@@ -1,0 +1,43 @@
+.info {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.info__icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: tomato;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5;
+    cursor: help;
+}
+.info__icon:after {
+    content: "i";
+}
+.info__icon:hover ~ .info__content {
+    opacity: 1;
+}
+.info__content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 15px;
+    min-width: 100px;
+    margin: 0;
+    background-color: #fafafa;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    opacity: 0;
+    font-size: 14px;
+    color: #333;
+    transition: opacity .2s;
+}
+.info--right .info__content {
+    left: auto;
+    right: 0;
+}
